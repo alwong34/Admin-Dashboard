@@ -1,6 +1,6 @@
 body {
     color: white;
-    background-color: #43455c;
+    background-color: #2e3047;
     display: grid;
     grid-template: 150px 6fr / 1fr 4fr;
     margin: 0px 0px;
@@ -138,7 +138,7 @@ input {
     padding: 25px 20px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
 
@@ -152,7 +152,8 @@ input {
     border-left: solid #E28866 8px;
     border-radius: 8px;
     height: 160px;
-    position: relative
+    position: relative;
+    box-shadow: 0px 3px 10px rgb(17, 18, 18)
 }
 
 .card-grid {
@@ -190,6 +191,62 @@ input {
     grid-row: 1 / 2;
 }
 
-.trending {
-    grid-row: 2 / 3;
+.announcement-list {
+    background-color: #43455c;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 3px 10px rgb(17, 18, 18)
 }
+
+.announcement-list h5 {
+    margin: 0px 0px;
+    margin-top: 16px;
+}
+
+.announcement-list p {
+    font-size: 11px;
+    color: rgb(219, 215, 215);
+}
+
+hr {
+    border-color: rgb(166, 166, 166);
+}
+
+.trending-users {
+    grid-row: 2 / 3;
+    background-color: #43455c;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 3px 10px rgb(17, 18, 18)
+}
+
+.trending-users img {
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    margin: 15px;
+    margin-bottom: 20px;
+}
+
+.username {
+    margin-bottom: 5px;
+}
+
+.user p {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.user :nth-child(2) :nth-child(2) {
+    color: rgb(219, 215, 215);
+}
+
+
